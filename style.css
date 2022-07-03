@@ -1,0 +1,254 @@
+
+#style
+{
+    background: url(https://images6.alphacoders.com/327/thumb-1920-327230.jpg) fixed no-repeat;
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+
+#siège
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+
+img
+{
+    width: 40px;
+    height: 39px;
+    margin-right: 5px;
+}
+
+#logo
+{
+    width: 105px;
+    height: 106px;
+}
+/* Syle css appliqué au header et au nav de toutes les pages du site soit les zones 1 et 2 conformément aux indications du projet */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+}
+nav ul 
+{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+nav li
+{
+    padding-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: yellow;
+    padding-bottom: 3px;
+    text-decoration: none;
+
+}
+.jaune
+{
+    color: yellow;
+}
+/* Fin du Syle css appliqué au header et au nav de toutes les pages du site */
+
+/* Style css appliqué au corps de toutes du css soit la zone 3 conformément aux indications du projet */
+
+section
+{ display: flex;
+    margin-bottom: 20px; 
+}
+/* Fin du Style css appliqué au corps de toutes du css soit la zone 3 conformément aux indications du projet */
+
+/* Mise en forme du texte écrit sur la page A propos */
+
+.texte
+{
+    text-align:justify;
+    text-align: center;
+    text-justify: inter-word;
+    margin: auto;
+    font-size: 50px;
+    color: whitesmoke;
+    word-spacing: 5px;
+    
+}
+
+/* Mise en forme du texte écrit sur la page A propos */
+
+/* Mise en forme du pied de page de toutes les pages du site soit la zone 4 conformément aux indications du projet */
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    height: 170px;
+    width: 100%;
+}
+
+
+#first-alignement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-alignement div img
+{
+    width: 40px;
+     height: 39px;
+}
+#second-alignement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.motif img
+{
+    width: 40px;
+    height: 39px;
+}
+/* fIN Mise en forme du pied de page de toutes les pages du site soit la zone 4 conformément aux indications du projet */
+
+/* Mise en forme des images sur la pages Activités (Réalisation des cartes )*/
+
+.modèle
+{
+    background-color: black;
+}
+#inner-card
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card:hover
+{
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card img
+{
+    width: 560px;
+    height: 550px;
+    margin-right: 95px;
+}
+
+.allcards
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#1c1a19;
+    color: whitesmoke;
+    margin: 25px 25px;
+ }
+
+/*fIN Mise en forme des images sur la pages Activités */
+
+/* Style css des images déroulantes sur la page Accueil */
+.slides
+{
+    width: calc(1200px *4);
+    animation-duration:15s;
+    animation-name:Glisseur;
+    animation-iteration-count: infinite;
+
+}
+@keyframes Glisseur {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-1200px);
+    }
+    40% {
+        transform: translateX(-2400px);
+    }
+    60% {
+        transform: translateX(-3600px);
+    }
+    80% {
+        transform: translateX(-4800px);
+    } 
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide img
+{
+    float: left;
+    width: 500px;
+    height: 490px;
+}
+/*  Fin Style css des images déroulantes sur la page Accueil */
+
+/* Mise en forme du formulaire sur la page CONTACT */
+#formulaire
+{
+    background: url(https://s3-prod-europe.autonews.com/s3fs-public/styles/1200x630/public/Lamborghini%20Huracan%20STO%20web.jpg) fixed no-repeat;
+    background-size: cover;
+    
+}
+button
+{
+    background-color: red;
+    cursor: pointer;
+}
+/* fIN Mise en forme du formulaire sur la page CONTACT */
+
+/* Mise en forme de l'arrière plan de la page accueil et du corps de page */
+#index
+{
+    background: url(https://i.pinimg.com/originals/f6/2e/63/f62e6332f96e73dcbfa2ed90bf6cb3a8.jpg) fixed no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Fin de la mise en forme de l'arrière plan de la page accueil et du corps de page */
+
+/* Styles css appliqués à tous les titres de niveau h1 et h2 sur toutes les pages */
+h1 
+{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 4px #1c1a19;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+
+h2 
+{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+
+}
+/* Fin du styles css appliqués à tous les titres de niveau h1 et h2 sur toutes les pages */
